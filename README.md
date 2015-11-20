@@ -4,7 +4,7 @@
 ###screen截图
 
 ![icon](http://7xohy8.com1.z0.glb.clouddn.com/应用宝截屏2015111105.png)
-![icon](http://7xohy8.com1.z0.glb.clouddn.com/应用宝截屏2015111105.png)
+![icon](http://7xohy8.com1.z0.glb.clouddn.com/应用宝截屏2015111106.png)
 ![icon](http://7xohy8.com1.z0.glb.clouddn.com/应用宝截屏2015111107.png)
 
 ##希望对大家有帮助
