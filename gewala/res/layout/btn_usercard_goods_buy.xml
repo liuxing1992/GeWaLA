@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_goods_buy_seletor" >
+
+    <ProgressBar
+        android:id="@+id/usercard_goods_buy_progress"
+        android:layout_width="25.0dip"
+        android:layout_height="25.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15.0dip"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/usercard_goods_buy_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20.0dip"
+        android:src="@drawable/icon_cartred" />
+
+    <TextView
+        android:id="@+id/usercard_goods_buy_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15.0dip"
+        android:layout_toRightOf="@+id/usercard_goods_buy_img"
+        android:text="¥ 0"
+        android:textColor="#fff87258"
+        android:textSize="16.0sp" />
+
+</RelativeLayout>

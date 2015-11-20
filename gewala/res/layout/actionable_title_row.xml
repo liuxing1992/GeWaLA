@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/actionable_bar_left_action"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="start"
+        android:drawablePadding="5.0dip"
+        android:gravity="center|left"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:textColor="@color/btn_text_color_selector_grayness" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:textColor="#ffffffff"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:id="@+id/actionable_bar_right_action"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="end"
+        android:drawablePadding="5.0dip"
+        android:gravity="center|right"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:textColor="@color/btn_text_color_selector_grayness" />
+
+</merge>

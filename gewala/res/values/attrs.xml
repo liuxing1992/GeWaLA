@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ActionableTitleBar">
+        <attr name="titleText" format="string" />
+        <attr name="leftActionText" format="string" />
+        <attr name="leftActionDrawable" format="reference" />
+        <attr name="rightActionText" format="string" />
+        <attr name="rightActionDrawable" format="reference" />
+    </declare-styleable>
+
+    
+    <declare-styleable name="CompontTextView">
+        
+        <attr name="frontTextColor" format="color"/>
+        <attr name="behindTextColor" format="color"/>
+        <attr name="frontText" format="string"/>
+        <attr name="behindText" format="string"/>
+        <attr name="space" format="integer"/>
+        <attr name="fronttextSize" format="float"/>
+         <attr name="behindtextSize" format="float"/>
+    </declare-styleable>
+</resources>

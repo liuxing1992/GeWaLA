@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_user_account_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <ImageSwitcher
+        android:id="@+id/is_user_account"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_user_account_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_user_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:padding="16.0dip"
+                android:text="关闭"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/tv_user_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:padding="16.0dip"
+                android:text="登录"
+                android:textSize="15.0sp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_user_logo"
+            android:layout_width="72.0dip"
+            android:layout_height="72.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48.0dip"
+            android:contentDescription="@null"
+            android:src="@drawable/about_logo" />
+
+        <FrameLayout
+            android:id="@+id/layout_user_account"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_user_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48.0dip"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="16.0dip"
+                    android:layout_marginTop="32.0dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8.0dip"
+                        android:contentDescription="@null"
+                        android:src="@drawable/icon_mobile" />
+
+                    <EditText
+                        android:id="@+id/user_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8.0dip"
+                        android:layout_toRightOf="@+id/iv_user_name"
+                        android:background="@null"
+                        android:hint="手机号"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_user_name_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8.0dip"
+                        android:src="@drawable/icon_account_close"
+                        android:visibility="gone" />
+
+                    <View
+                        android:id="@+id/view_user_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#ffa0a0a0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_dkey_number_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48.0dip"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="16.0dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_dkey_number_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8.0dip"
+                        android:contentDescription="@null"
+                        android:src="@drawable/icon_code" />
+
+                    <EditText
+                        android:id="@+id/et_dkey_number_input"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8.0dip"
+                        android:layout_toRightOf="@+id/iv_dkey_number_input"
+                        android:background="@null"
+                        android:hint="验证码"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16.0sp" />
+
+                    <Button
+                        android:id="@+id/btn_get_dkey"
+                        android:layout_width="42.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8.0dip"
+                        android:background="@drawable/bg_account_btn_get"
+                        android:text="获取"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:id="@+id/view_dkey_number_input"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#ffa0a0a0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48.0dip"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="16.0dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8.0dip"
+                        android:contentDescription="@null"
+                        android:src="@drawable/icon_password" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8.0dip"
+                        android:layout_toRightOf="@+id/iv_password"
+                        android:background="@null"
+                        android:hint="密码"
+                        android:imeOptions="actionDone"
+                        android:password="true"
+                        android:singleLine="true"
+                        android:textColorHint="#ffa0a0a0"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_password_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8.0dip"
+                        android:src="@drawable/icon_account_close"
+                        android:visibility="gone" />
+
+                    <View
+                        android:id="@+id/view_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#ffa0a0a0" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_account_btn_selector"
+                    android:text="找回" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

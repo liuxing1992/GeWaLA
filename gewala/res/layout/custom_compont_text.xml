@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <TextView 
+        android:id="@+id/front"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="front"/>
+    
+    <TextView 
+        android:id="@+id/behind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="behind"/>
+
+</LinearLayout>

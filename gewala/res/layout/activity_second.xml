@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app1="http://schemas.android.com/apk/res/com.example.loginsoftanim">
+
+    
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300dp" >
+
+        <com.example.loginsoftanim.MarqueeImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#b2000000" />
+    </RelativeLayout>
+    
+    <com.example.loginsoftanim.CustomBuyButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="330dp"
+        />
+    
+    <com.example.loginsoftanim.ActionableTitleBar
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app1:leftActionDrawable="@drawable/icon_account_close"
+        app1:rightActionText="分享"
+        app1:leftActionText="关闭"
+        app1:titleText="你好"/>
+
+</FrameLayout>
